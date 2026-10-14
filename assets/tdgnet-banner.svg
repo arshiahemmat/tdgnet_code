@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="350" viewBox="0 0 1400 350" role="img" aria-labelledby="title desc">
+<title id="title">TDGNet: Hallucination detection in diffusion language models via temporal dynamic graphs</title>
+<desc id="desc">Schematic illustration of the TDGNet architecture. No measured attention weights or experimental outputs are shown.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#7b88a4"/></marker></defs>
+<rect x="1" y="1" width="1398" height="348" rx="22" fill="#f7f9ff" stroke="#dce3f2"/>
+<rect x="54" y="35" width="222" height="31" rx="15" fill="#ebe9ff" stroke="#ddd8ff"/>
+<text x="165" y="56" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" fill="#6254d9" text-anchor="middle">EMNLP 2026 · ORAL</text>
+<text x="54" y="143" font-family="DejaVu Sans,Arial,sans-serif" font-size="76" font-weight="700" fill="#162841" text-anchor="start">TDGNet</text>
+<text x="57" y="191" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" fill="#162841" text-anchor="start">Hallucination detection in diffusion language models</text>
+<text x="57" y="229" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" fill="#162841" text-anchor="start">via temporal dynamic graphs</text>
+<path d="M57 257 L748 257" fill="none" stroke="#dce3f2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="57" y="295" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#536078" text-anchor="start">Attention graphs · Token memories · Temporal readout</text>
+<text x="1100" y="70" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="700" fill="#536078" text-anchor="middle">DENOISING TRAJECTORY</text>
+<rect x="838" y="105" width="111" height="140" rx="15" fill="white" stroke="#dce3f2"/>
+<path d="M878.0 141.0 L907.0 141.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M869.0 150.0 L869.0 180.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M878.0 190.0 L907.0 190.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M917.0 150.0 L917.0 180.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="869" cy="141" r="8" fill="#6254d9" stroke="none"/>
+<circle cx="917" cy="141" r="8" fill="#287dcb" stroke="none"/>
+<circle cx="869" cy="190" r="8" fill="#168f95" stroke="none"/>
+<circle cx="917" cy="190" r="8" fill="#6254d9" stroke="none"/>
+<text x="893.5" y="231" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="700" fill="#162841" text-anchor="middle">T</text>
+<path d="M954 173 L964 173" fill="none" stroke="#7b88a4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="968" y="105" width="111" height="140" rx="15" fill="white" stroke="#dce3f2"/>
+<path d="M1005.298018513348 147.42922723237606 L1040.0022016518355 182.8564141862488" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1005.298018513348 183.57077276762394 L1040.0022016518355 148.1435858137512" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M999.0 150.0 L999.0 180.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="999" cy="141" r="8" fill="#6254d9" stroke="none"/>
+<circle cx="1047" cy="141" r="8" fill="#287dcb" stroke="none"/>
+<circle cx="999" cy="190" r="8" fill="#168f95" stroke="none"/>
+<circle cx="1047" cy="190" r="8" fill="#6254d9" stroke="none"/>
+<text x="1023.5" y="231" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="700" fill="#162841" text-anchor="middle">T/2</text>
+<path d="M1084 173 L1094 173" fill="none" stroke="#7b88a4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1098" y="105" width="111" height="140" rx="15" fill="white" stroke="#dce3f2"/>
+<path d="M1168.0 141.0 L1139.0 141.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1129.0 181.0 L1129.0 151.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1177.0 181.0 L1177.0 151.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="1129" cy="141" r="8" fill="#6254d9" stroke="none"/>
+<circle cx="1177" cy="141" r="8" fill="#287dcb" stroke="none"/>
+<circle cx="1129" cy="190" r="8" fill="#168f95" stroke="none"/>
+<circle cx="1177" cy="190" r="8" fill="#6254d9" stroke="none"/>
+<text x="1153.5" y="231" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="700" fill="#162841" text-anchor="middle">T/4</text>
+<path d="M1214 173 L1224 173" fill="none" stroke="#7b88a4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1228" y="105" width="111" height="140" rx="15" fill="white" stroke="#dce3f2"/>
+<path d="M1268.0 141.0 L1297.0 141.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1307.0 150.0 L1307.0 180.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1268.0 190.0 L1297.0 190.0" fill="none" stroke="#aebbd7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="1259" cy="141" r="8" fill="#6254d9" stroke="none"/>
+<circle cx="1307" cy="141" r="8" fill="#287dcb" stroke="none"/>
+<circle cx="1259" cy="190" r="8" fill="#168f95" stroke="none"/>
+<circle cx="1307" cy="190" r="8" fill="#6254d9" stroke="none"/>
+<text x="1283.5" y="231" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="700" fill="#162841" text-anchor="middle">0</text>
+<text x="1087" y="283" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" fill="#536078" text-anchor="middle">Schematic attention graphs</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="650" viewBox="0 0 1400 650" role="img" aria-labelledby="title desc">
+<title id="title">TDGNet architecture: spatial aggregation, temporal memory and trajectory readout</title>
+<desc id="desc">Schematic illustration of the TDGNet architecture. No measured attention weights or experimental outputs are shown.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#7b88a4"/></marker></defs>
+<rect x="1" y="1" width="1398" height="648" rx="22" fill="white" stroke="#dce3f2"/>
+<text x="44" y="47" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="700" fill="#162841" text-anchor="start">TDGNet architecture</text>
+<text x="44" y="78" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" fill="#536078" text-anchor="start">Attention keyframes become persistent token memories and a trajectory-level readout.</text>
+<rect x="44" y="104" width="1312" height="65" rx="12" fill="#f7f9ff" stroke="#dce3f2"/>
+<text x="64" y="130" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" font-weight="700" fill="#6254d9" text-anchor="start">PREPARED TRACE</text>
+<text x="64" y="153" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" font-weight="400" fill="#162841" text-anchor="start">Head-averaged attention A + token hidden states H</text>
+<rect x="862" y="121" width="98" height="32" rx="8" fill="white" stroke="#dce3f2"/>
+<text x="911" y="142" font-family="DejaVu Sans Mono,monospace" font-size="13" font-weight="500" fill="#162841" text-anchor="middle">t = T</text>
+<rect x="977" y="121" width="98" height="32" rx="8" fill="white" stroke="#dce3f2"/>
+<text x="1026" y="142" font-family="DejaVu Sans Mono,monospace" font-size="13" font-weight="500" fill="#162841" text-anchor="middle">t = T/2</text>
+<rect x="1092" y="121" width="98" height="32" rx="8" fill="white" stroke="#dce3f2"/>
+<text x="1141" y="142" font-family="DejaVu Sans Mono,monospace" font-size="13" font-weight="500" fill="#162841" text-anchor="middle">t = T/4</text>
+<rect x="1207" y="121" width="98" height="32" rx="8" fill="white" stroke="#dce3f2"/>
+<text x="1256" y="142" font-family="DejaVu Sans Mono,monospace" font-size="13" font-weight="500" fill="#162841" text-anchor="middle">t = 0</text>
+<rect x="44" y="197" width="420" height="368" rx="16" fill="white" stroke="#dce3f2"/>
+<rect x="62" y="216" width="36" height="30" rx="8" fill="#f1f4fb" stroke="none"/>
+<text x="80" y="237" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" fill="#6254d9" text-anchor="middle">01</text>
+<text x="112" y="240" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#162841" text-anchor="start">Spatial aggregation</text>
+<path d="M64 260 L444 260" fill="none" stroke="#dce3f2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M471 380 L483 380" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="490" y="197" width="420" height="368" rx="16" fill="white" stroke="#dce3f2"/>
+<rect x="508" y="216" width="36" height="30" rx="8" fill="#f1f4fb" stroke="none"/>
+<text x="526" y="237" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" fill="#287dcb" text-anchor="middle">02</text>
+<text x="558" y="240" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#162841" text-anchor="start">Temporal memory</text>
+<path d="M510 260 L890 260" fill="none" stroke="#dce3f2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M917 380 L929 380" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="936" y="197" width="420" height="368" rx="16" fill="white" stroke="#dce3f2"/>
+<rect x="954" y="216" width="36" height="30" rx="8" fill="#f1f4fb" stroke="none"/>
+<text x="972" y="237" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="700" fill="#168f95" text-anchor="middle">03</text>
+<text x="1004" y="240" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#162841" text-anchor="start">Trajectory readout</text>
+<path d="M956 260 L1336 260" fill="none" stroke="#dce3f2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="66" y="292" font-family="DejaVu Sans Mono,monospace" font-size="17" font-weight="500" fill="#6254d9" text-anchor="start">A[i,j] &gt; τ   ⇒   j → i</text>
+<path d="M146 329 C223 329 239 369 297 369" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M146 422 C214 422 240 390 297 379" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M340 358 C380 303 273 303 306 358" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<circle cx="126" cy="329" r="23" fill="#6254d9" stroke="none"/>
+<text x="126" y="335" font-family="DejaVu Sans Mono,monospace" font-size="19" font-weight="700" fill="white" text-anchor="middle">j</text>
+<circle cx="126" cy="422" r="23" fill="#168f95" stroke="none"/>
+<text x="126" y="428" font-family="DejaVu Sans Mono,monospace" font-size="19" font-weight="700" fill="white" text-anchor="middle">k</text>
+<circle cx="323" cy="374" r="23" fill="#287dcb" stroke="none"/>
+<text x="323" y="380" font-family="DejaVu Sans Mono,monospace" font-size="19" font-weight="700" fill="white" text-anchor="middle">i</text>
+<text x="323" y="429" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" fill="#536078" text-anchor="middle">Projected node states</text>
+<text x="66" y="478" font-family="DejaVu Sans Mono,monospace" font-size="14" font-weight="400" fill="#162841" text-anchor="start">m_i = mean_j MLP([h_j; h_i; A[i,j]])</text>
+<text x="66" y="512" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#536078" text-anchor="start">Aggregate incoming neighbours.</text>
+<text x="66" y="539" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" fill="#536078" text-anchor="start">Self-loops follow the same threshold.</text>
+<text x="512" y="292" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" font-weight="400" fill="#287dcb" text-anchor="start">One persistent memory for each token</text>
+<rect x="511" y="335" width="125" height="48" rx="10" fill="#f4f6fc" stroke="#dce3f2"/>
+<text x="573.5" y="365" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="500" fill="#162841" text-anchor="middle">s_prev</text>
+<path d="M642 359 L669 359" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="677" y="326" width="184" height="66" rx="12" fill="#eaf2ff" stroke="#cbdcf5"/>
+<text x="769" y="367" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="700" fill="#287dcb" text-anchor="middle">GRU</text>
+<text x="769" y="310" font-family="DejaVu Sans Mono,monospace" font-size="13" font-weight="500" fill="#536078" text-anchor="middle">m_current</text>
+<path d="M769 312 L769 322" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M769 398 L769 423" fill="none" stroke="#7b88a4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="708" y="429" width="122" height="42" rx="10" fill="#e9f7f4" stroke="#c8e8e1"/>
+<text x="769" y="456" font-family="DejaVu Sans Mono,monospace" font-size="14" font-weight="700" fill="#168f95" text-anchor="middle">s_current</text>
+<text x="512" y="507" font-family="DejaVu Sans Mono,monospace" font-size="15" font-weight="400" fill="#162841" text-anchor="start">s_i^t = GRU(m_i^t, s_i^(t+1))</text>
+<text x="512" y="539" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="400" fill="#536078" text-anchor="start">Reset memories between traces.</text>
+<text x="958" y="291" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#168f95" text-anchor="start">Attend over each token’s memory history</text>
+<rect x="958" y="317" width="83" height="44" rx="9" fill="#f2f9f8" stroke="#d1e7e3"/>
+<text x="999.5" y="345" font-family="DejaVu Sans Mono,monospace" font-size="12" font-weight="500" fill="#162841" text-anchor="middle">s_T</text>
+<rect x="1054" y="317" width="83" height="44" rx="9" fill="#f2f9f8" stroke="#d1e7e3"/>
+<text x="1095.5" y="345" font-family="DejaVu Sans Mono,monospace" font-size="12" font-weight="500" fill="#162841" text-anchor="middle">s_T/2</text>
+<rect x="1150" y="317" width="83" height="44" rx="9" fill="#f2f9f8" stroke="#d1e7e3"/>
+<text x="1191.5" y="345" font-family="DejaVu Sans Mono,monospace" font-size="12" font-weight="500" fill="#162841" text-anchor="middle">s_T/4</text>
+<rect x="1246" y="317" width="83" height="44" rx="9" fill="#f2f9f8" stroke="#d1e7e3"/>
+<text x="1287.5" y="345" font-family="DejaVu Sans Mono,monospace" font-size="12" font-weight="500" fill="#162841" text-anchor="middle">s_0</text>
+<text x="958" y="397" font-family="DejaVu Sans Mono,monospace" font-size="16" font-weight="400" fill="#162841" text-anchor="start">α = softmax_t(qᵀs_t)</text>
+<text x="958" y="429" font-family="DejaVu Sans Mono,monospace" font-size="15" font-weight="400" fill="#162841" text-anchor="start">z_i = Σ_t α_i^t · Linear(s_i^t)</text>
+<rect x="958" y="460" width="376" height="35" rx="9" fill="#edf3ff" stroke="#d5e1f5"/>
+<text x="1146" y="483" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="500" fill="#287dcb" text-anchor="middle">MeanPool → MLP → response logit</text>
+<rect x="958" y="509" width="376" height="35" rx="9" fill="#ecf8f5" stroke="#cce9e1"/>
+<text x="1146" y="532" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" font-weight="500" fill="#168f95" text-anchor="middle">Per-node MLP → response-token logits</text>
+<text x="44" y="607" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" font-weight="400" fill="#536078" text-anchor="start">Directed edges j → i follow A[i,j]. Graph pooling includes all valid nodes by default.</text>
+<text x="44" y="631" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" font-weight="400" fill="#536078" text-anchor="start">Response-only pooling is an explicit option. The diagrams are schematic.</text>
+</svg>

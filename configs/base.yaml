@@ -1,0 +1,20 @@
+model:
+  hidden_dim: 128
+  msg_hidden_dim: null
+  dropout: 0.0
+  tau: 0.05
+  num_mp_layers: 1
+  num_temporal_heads: 1
+  include_self_loops: true
+  pooling: all
+  disable_edges: false
+
+train:
+  seed: 42
+  task: response
+  epochs: 30
+  lr: 0.001
+  batch_size: 16
+  patience: 5
+  token_loss_weight: 1.0
+  device: cpu
